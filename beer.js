@@ -7,9 +7,9 @@ function searchBrewery() {
         console.log(result);
         var output  = "";
         for (item in result) {
-            output += result[item].name + "\n";
+            output += "<li>" + result[item].name + "</li>";
         }
-        document.getElementById("output").textContent=(output);
+        document.getElementById("output").innerHTML=(output);
     },
     error: function(result) {
         console.log("Error");
