@@ -1,15 +1,38 @@
-<html>
-    <head>
-        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-        <script src="beer.js"></script>
-    </head>
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>Brewery Worldwide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="weblooks.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="beer.js"></script>
+</head>
+<body>
+    <header>
+    <h1><a href="./">Brewery Worldwide</a></h1>
+    <p>Retrieve information about any Brewery around the world!</p>
+    </header>
     
-    <body>
-        <form>
-            City:<br>
-                <input type="text" id="city_query">
-        </form>
-        <button onclick="searchBrewery()">Search</button>
+    <main>
+    <!-- input -->
+    <form class="submit">
+        <input type="text" placeholder="Type in your Brewery here...">
+        <button type="submit" onclick="searchBrewery()">Submit</button>
+    </form>  
+    <!-- ./input -->
+    <!-- output -->
+    <div class="wrapper">
+        <div class="content">
+            <p><strong>Enter a valid brewery here (i.e. Red Brick Brewing Company)</strong></p>
+            <img src="Placeholder.png" alt="Data placeholder">
+        </div>
+    </div>
+    <!-- ./output -->
+    </main>
     
-    </body>
+    <footer></footer>
+</body>
 </html>
