@@ -19,13 +19,13 @@
     <main>
     <!-- input -->
     <form class="submit">
-        <input type="text" placeholder="Type in your Brewery here...">
-        <button type="submit" onclick="searchBrewery()">Submit</button>
+        <input type="text" id="brewery_query" placeholder="Type in your Brewery here...">
     </form>  
+    <button type="submit" onclick="searchBrewery()">Submit</button>
     <!-- ./input -->
     <!-- output -->
     <div class="wrapper">
-        <div class="content">
+        <div class="content" id="output">
             <p><strong>Enter a valid brewery here (i.e. Red Brick Brewing Company)</strong></p>
             <img src="Placeholder.png" alt="Data placeholder">
         </div>
