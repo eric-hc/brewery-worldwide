@@ -1,38 +1,45 @@
 <!doctype html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <title>Brewery Worldwide</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="weblooks.css">
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="beer.js"></script>
+  <meta charset="utf-8">
+  <title>Brewery Worldwide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Yellowtail" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="weblooks.css">
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="beer.js"></script>
 </head>
+
 <body>
-    <header>
-    <h1><a href="./">Brewery Worldwide</a></h1>
+  <header>
+    <h1><a href="">Brewery Worldwide</a></h1>
     <p>Retrieve information about any Brewery around the world!</p>
-    </header>
-    
-    <main>
+  </header>
+
+  <main>
     <!-- input -->
-    <form class="submit">
-        <input type="text" id="brewery_query" placeholder="Type in your Brewery here...">
-    </form>  
-    <button type="submit" onclick="searchBrewery()">Submit</button>
+    <Flexbox id="test" class="submit hbox">
+      <input type="text" id="brewery_query" placeholder="Type in your Brewery here...">
+      <button type="button" onclick="searchBrewery()" id="search_button">Submit</button>
+    </Flexbox>
     <!-- ./input -->
     <!-- output -->
     <div class="wrapper">
-        <div class="content" id="output">
-            <p><strong>Enter a valid brewery here (i.e. Red Brick Brewing Company)</strong></p>
-            <img src="Placeholder.png" alt="Data placeholder">
-        </div>
+      <div class="content" id="output">
+        <p><strong>Enter a valid brewery here (i.e. Red Brick Brewing Company)</strong></p>
+        <img src="https://s3-us-west-2.amazonaws.com/brewery-worldwide/logo.png" alt="Data placeholder">
+      </div>
     </div>
     <!-- ./output -->
-    </main>
-    
-    <footer></footer>
+  </main>
+
+  <div id="footer" class="footer">
+    <p>
+      Eric Carboni, Jonathan Taylor
+      <br /> CS 4720 Internet Programming
+    </p>
+  </div>
 </body>
+
 </html>
